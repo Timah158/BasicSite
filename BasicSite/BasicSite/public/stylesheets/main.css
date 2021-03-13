@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #24c6d4;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #45EFFF;
+}
+
+    nav a {
+        padding: 10px;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li, a {
+        text-decoration: none;
+        color: white;
+    }
+
+        nav li a:hover {
+            background: #0E4E54;
+        }
+
+    nav button {
+        color: white;
+        text-decoration: none;
+        background: none;
+        border: none;
+        padding: 10px;
+    }
+
+        nav button:hover {
+            background: grey;
+        }
+
+
+
+.NavBar {
+    list-style: none;
+    padding: 0;
+}
+
+NavBar ul, li {
+    display: inline-block;
+    text-align: center;
+}
+
+.SignInMainContainer {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow: auto;
+}
+
+.SignUp {
+    margin-top: -50px;
+    display: none;
+    background: #24c6d4;
+    color: white;
+    width: 33%;
+    text-align: center;
+    height: 50%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #45EFFF;
+    position: center;
+    z-index: 2;
+}
+
+    .SignUp h3 {
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+        .SignUp h3:hover {
+            cursor: default;
+        }
+
+    .SignUp input {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+
+        .SignUp input[type=submit] {
+            border: solid;
+            border-bottom-color: white;
+            border-width: 2px;
+            text-decoration: none;
+            color: white;
+            background: none;
+            margin-top: 15px;
+            border-radius: 15px;
+            outline: none;
+        }
+
+            .SignUp input[type=submit]:hover {
+                background-color: #0E4E54;
+                cursor: pointer;
+            }
+
+    .SignUp button {
+        border: none;
+        text-decoration: none;
+        color: white;
+        background: none;
+        margin-top: 12px;
+        outline: none;
+    }
+
+        .SignUp button:hover {
+            cursor: pointer;
+            color: #E6E6E6;
+        }
+
+.Login {
+    display: block;
+    background: #24c6d4;
+    color: white;
+    width: 33%;
+    text-align: center;
+    height: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #45EFFF;
+    position: center;
+    z-index: 1;
+}
+
+    .Login h3 {
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+        .Login h3:hover {
+            cursor: default;
+        }
+
+.ForgotPassword button {
+    padding-top: 5px;
+    text-decoration: underline;
+    border: none;
+    font-size: 15px;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+    .ForgotPassword button:hover {
+        color: #E6E6E6;
+        background: none;
+        cursor: pointer;
+    }
+
+.Login a:hover {
+    color: #ebebeb;
+}
+
+.Login input {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+    .Login input[type=submit], .LoginSubmit button {
+        border: solid;
+        border-bottom-color: white;
+        border-width: 2px;
+        text-decoration: none;
+        color: white;
+        background: none;
+        margin-top: 15px;
+        border-radius: 15px;
+        outline: none;
+    }
+
+        .Login input[type=submit]:hover, input[type=button]:hover {
+            background-color: #0E4E54;
+            cursor: pointer;
+        }
+
+.LoginSubmit button {
+    padding: 10px;
+    outline: none;
+}
+
+    .LoginSubmit button:hover {
+        background-color: #0E4E54;
+        cursor: pointer;
+    }
+
+.error {
+    display: none;
+    margin-top: 5px;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.SocialMedia a{
+    color: black;
+    opacity:0.25;
+    padding: .5em;
+}

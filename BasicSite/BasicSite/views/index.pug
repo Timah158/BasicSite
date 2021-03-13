@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  <body>
+    <div class="SignInMainContainer">
+        <div class="SignUp" id="SignUp">
+            <h3>Register</h3>
+            <form action="/Register">
+                <input type="text" id="FName" name="FName" placeholder="First Name" required/><br />
+                <input type="text" id="LName" name="LName" placeholder="Last Name" required/><br />
+                <input type="email" id="Email" name="Email" placeholder="Email@email.com" required/><br />
+                <input type="text" id="UserName" name="UserName" placeholder="User Name" required/><br />
+                <input type="password" id="Password" name="Password" placeholder="Password" required/><br />
+                <input type="password" id="CPassword" name="CPassword" placeholder="Confirm Password" required/><br />
+                <input type="submit" id="Register" value="Register" formmethod="post"/><br />
+
+                <button onclick='OpenLogin()'>&#8592; Back to Login</button>
+
+            </form>
+        </div>
+        <div class="Login" id="Login" onsubmit="return Validate()">
+            <h3>Login</h3>
+            <form action="/Login">
+                <input type="text" id="EUser" name="EUser" placeholder="User Name" autocomplete="on" required /><br />
+                <input type="password" id="EPassword" name="EPassword" placeholder="Password" autocomplete="on" required /><br />
+                <div class="error" id="error"><p>error</p></div>
+                <div class="ForgotPassword"><button type="button">Forgot Password</button><br /></div>
+                    <!--<input type="checkbox" id="checkbox" name="checkbox" value="cookie" />
+                    <label for="checkbox">Stay signed in</label><br />-->
+                <input type="submit" value="Login" id="Login" formmethod="POST"/><br />
+
+                <div class="LoginSubmit">
+                    <button onclick='OpenRegister()'>Create Account</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+  </body>
+
+  <footer>
+  <div class="SocialMedia">
+    <a href="#"><i class="fa fa-facebook-official" style="font-size:36px"></i></a>
+    <a href="#"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+    <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+  </div>
+  </footer>

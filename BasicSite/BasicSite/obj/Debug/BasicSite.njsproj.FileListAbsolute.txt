@@ -1,0 +1,3 @@
+C:\Users\timot\source\repos\BasicSite\BasicSite\obj\Debug\BasicSite.njsproj.CoreCompileInputs.cache
+C:\Users\timot\source\repos\BasicSite\BasicSite\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\timot\source\repos\BasicSite\BasicSite\obj\Debug\BasicSite.njsprojAssemblyReference.cache
